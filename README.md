@@ -1,2 +1,3 @@
 # How well do they know me
- A smalla CLI quiz app 
+ A small CLI quiz app on
+ how well do my friends know me.
