@@ -3,7 +3,7 @@ var readLineSync = require('readline-sync');
 
 var userName = readLineSync.question("What's Your Name?");
 
-console.log("welcome "+ userName + " to Do YOU KNOW SONU?");
+console.log("welcome " + userName + " to Do YOU KNOW SONU?");
 
 // data of high score
 var highScores = [
@@ -20,13 +20,13 @@ var highScores = [
 
 var score = 0;
 
-function play(question, answer){
+function play(question, answer) {
   var userAnswer = readLineSync.question(question);
 
-  if (userAnswer === answer){
+  if (userAnswer === answer) {
     console.log("You were right!");
     score = score + 1;
-  }else{
+  } else {
     console.log("You were wrong!");
     score = score - 1;
   }
@@ -37,6 +37,8 @@ function play(question, answer){
 play("where do i live?", "Diyun");
 play("where do i study? ", "College");
 play("what do i play? ", "Football");
+play("what is favourite color?", "Blue");
+play("How old am i?", "21 years")
 
 
 // console.log("Your score is ", score);
